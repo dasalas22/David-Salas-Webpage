@@ -1,0 +1,20 @@
+/*rows and columns*/
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.column-foto{
+	order: 1;
+	flex-basis: 280px;
+}
+
+.column-tarjeta{
+	order: 2;
+	flex-basis: 400px;
+}
