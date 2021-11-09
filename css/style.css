@@ -21,10 +21,6 @@ main{
 	padding: 20px;
 }
 
-header{
-	background-color: var(--blanco);
-	/*overflow: hidden;*/
-}
 
 img{
 	margin: auto;
@@ -105,4 +101,49 @@ span{
 .column-tarjeta{
 	order: 2;
 	flex-basis: 400px;
+}
+
+/*navigation bar*/
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  
+  list-style: none;
+  margin: 0; 
+  background: var(--blanco);
+}
+
+.navigation a {
+  display: block;
+  padding: 1em;
+}
+
+/*.navigation a:hover {
+  background: var(--acento);
+  color: var(--blanco);
+}*/
+
+.navigation a.focus{
+	background: var(--acento);
+  color: var(--blanco);
+}
+
+
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255,0.3); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
 }
