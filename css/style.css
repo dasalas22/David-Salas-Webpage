@@ -44,12 +44,14 @@ h2{
 h3{
 	color: var(--acento);
 	font-family: 'Quicksand', 'Helvetica', sans-serif;
+	margin-block-end: 0.3em;
 }
 
 
 /*paragraph*/
 p{
 	line-height: 24px;
+	margin-block-start: 0;
 }
 
 
@@ -95,7 +97,7 @@ span{
 
 .column-foto{
 	order: 1;
-	flex-basis: 300px;
+	flex-basis: 270px;
 }
 
 .column-tarjeta{
